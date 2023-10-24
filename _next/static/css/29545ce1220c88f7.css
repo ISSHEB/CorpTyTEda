@@ -1,0 +1,286 @@
+html {
+    background-color: #48484a
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: Roboto
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+@font-face {
+    font-family: nickelodeon2001headline;
+    src: url(/_next/static/media/nickelodeon2001headline.a15d51bd.ttf)
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/_next/static/media/Roboto-Regular.298c1099.ttf)
+}
+
+.tire:before {
+    content: "";
+    width: 19px;
+    border-bottom: 1px solid #696969;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    font-size: 50px
+}
+
+.embla {
+    overflow: hidden
+}
+
+.embla__container {
+    display: flex;
+    flex-direction: row;
+    width: 235.5px
+}
+
+.embla__slide {
+    position: relative;
+    flex: 0 0 100%
+}
+
+.embla__slide>img {
+    width: 170px
+}
+
+.emblaB__container {
+    display: flex;
+    flex-direction: row;
+    width: 262.5px
+}
+
+.emblaB__slide {
+    position: relative;
+    flex: 0 0 100%
+}
+
+.emblaB__slide>img {
+    width: 190px
+}
+
+.emblaM {
+    border-radius: 15px;
+    position: relative;
+    padding: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff
+}
+
+.emblaM__viewport {
+    overflow: hidden;
+    width: 100%
+}
+
+.emblaM__viewport.is-draggable {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.emblaM__viewport.is-dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.emblaM__container {
+    display: flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: -10px
+}
+
+.emblaM__slide {
+    position: relative;
+    min-width: 30%;
+    padding-left: 10px
+}
+
+.emblaM__slide__inner {
+    position: relative;
+    overflow: hidden;
+    height: 200px
+}
+
+.emblaM__slide__img {
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 50%;
+    width: auto;
+    min-height: 180px;
+    min-width: 180px;
+    max-width: none;
+    transform: translate(-50%, -50%)
+}
+
+.emblaS {
+    border-radius: 15px;
+    position: relative;
+    padding: 30px 0;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.emblaS__viewport {
+    overflow: hidden;
+    width: 100%
+}
+
+.emblaS__viewport.is-draggable {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.emblaS__viewport.is-dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.emblaS__container {
+    display: flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-left: -10px
+}
+
+.emblaS__slide {
+    position: relative;
+    min-width: 100%;
+    padding-left: 10px
+}
+
+.emblaS__slide__inner {
+    position: relative;
+    overflow: hidden;
+    height: 200px
+}
+
+.emblaS__slide__img {
+    position: absolute;
+    display: block;
+    top: 55%;
+    left: 50%;
+    width: auto;
+    min-height: 180px;
+    min-width: 180px;
+    max-width: none;
+    transform: translate(-50%, -50%)
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 100px auto
+}
+
+.bounce1,
+.bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: green;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2s ease-in-out infinite;
+    animation: sk-bounce 2s ease-in-out infinite
+}
+
+.bounce2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s
+}
+
+@-webkit-keyframes sk-bounce {
+
+    0%,
+    to {
+        transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    to {
+        transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}
+
+.foodHeader {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 84.52%;
+    letter-spacing: -.02em;
+    color: "#2A2A2A";
+    margin-bottom: "10px"
+}
+
+.foodDescription {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 88.52%;
+    letter-spacing: -.005em;
+    color: #2a2a2a
+}
+
+.foodDescriptionSlider {
+    color: #2a2a2a;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 5000;
+    transform: translate(-50%)
+}
+
+@media screen and (min-width:500px) and (max-width:900px) {
+    .foodHeader {
+        font-size: 32px
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:499px) {
+    .foodFits {
+        font-size: 14px
+    }
+}
+
+.red {
+    color: red
+}
+
+.green {
+    color: green
+}
